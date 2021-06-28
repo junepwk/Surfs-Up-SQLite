@@ -9,8 +9,15 @@ This analysis is to provide an insight for an investor to determine the stabilit
 - Application: Flask
 
 ## Results
+The three key differences in weather between June and December:
+- The max temperatures for both months are 85 and 83, respectively. 
+- The min temperatures for both months are 64 and 56, respectively. The differences between the months are minute, thus, it appears the surf and ice cream shop business would be sustainable year round.
+- There are 183 more data for the month of June than December.
 
+![june_temperatures](https://github.com/junepwk/surfs-up/blob/main/Resources/june_temperatures.png) ![dec_temperatures](https://github.com/junepwk/surfs-up/blob/main/Resources/dec_temperatures.png)
 
+Between the year 2016-2017, this histogram further shows that Oahu maintains moderate temperatures throughout the year. 
 
 ## Summary
+
 
