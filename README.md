@@ -8,6 +8,7 @@
     <li>
       <a href="#getting-started">Getting Started</a>
       <ul>
+        <li><a href="#prerequisites">Prerequisites</a></li>
         <li><a href="#installation">Installation</a></li>
       </ul>
     </li>
@@ -45,41 +46,48 @@ This analysis is to provide an insight for an investor to determine the stabilit
     - Flask
 </details>
 
+### Prerequisites
+To install Flask, run the following code in the command line:
+
+```
+pip install flask
+```
+
 ### Installation
-Here's how to setup the database:
-- Import dependencies
-    ```
-    import sqlalchemy
-    from sqlalchemy.ext.automap import automap_base
-    from sqlalchemy.orm import Session
-    from sqlalchemy import create_engine, func
-    ```
-- Connect notebook to SQLite database
-    ```
-    engine = create_engine("sqlite:///hawaii.sqlite")
-    ```
-- Create a base class for an automap schema in SQLAlchemy and reflect the tables.
-    ```
-    Base = automap_base()
-    Base.prepare(engine, reflect=True)
-    ```
- - Save references to each table
-    ```
-    Measurement = Base.classes.measurement
-    Station = Base.classes.station
-    ```
- - Create the session
-    ```
-    session = Session(engine)
-    ```
-  ---
+**SQLite Setup**
+
+```python
+# Import dependencies
+import sqlalchemy
+from sqlalchemy.ext.automap import automap_base
+from sqlalchemy.orm import Session
+from sqlalchemy import create_engine, func
+
+# Connect notebook to SQLite database
+engine = create_engine("sqlite:///hawaii.sqlite")
+    
+# Create a base class for an automap schema in SQLAlchemy and reflect the tables.
+Base = automap_base()
+Base.prepare(engine, reflect=True)
+    
+# Save references to each table
+Measurement = Base.classes.measurement
+Station = Base.classes.station
+    
+#Create the session
+session = Session(engine)
+```
+    
+---
   
-  To install and setup Flask, run the following code in the command line:
-  
-    ```
-    pip install flask
-    ```
- 
+**Flask Setup**
+
+```python
+from flask import Flask
+
+# Create a Flask app instance
+app = Flask(__name__)
+```
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 ## Results
