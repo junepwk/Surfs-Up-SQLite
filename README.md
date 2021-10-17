@@ -8,7 +8,6 @@
     <li>
       <a href="#getting-started">Getting Started</a>
       <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
         <li><a href="#installation">Installation</a></li>
       </ul>
     </li>
@@ -47,7 +46,7 @@ This analysis is to provide an insight for an investor to determine the stabilit
 </details>
 
 ### Installation
-Here's how you set up the database:
+Here's how to setup the database:
 - Import dependencies
     ```
     import sqlalchemy
@@ -73,6 +72,14 @@ Here's how you set up the database:
     ```
     session = Session(engine)
     ```
+  ---
+  
+  To install and setup Flask, run the following code in the command line:
+  
+    ```
+    pip install flask
+    ```
+ 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 ## Results
