@@ -28,6 +28,8 @@ This analysis is to provide an insight for an investor to determine the stabilit
 - Database: SQLAlchemy for SQLite
 - Application: Flask
 
+<p align="right">(<a href="#top">back to top</a>)</p>
+
 ## Results
 The three key differences in weather between June and December:
 - The max temperatures for both months are 85 and 83, respectively. 
@@ -40,6 +42,8 @@ Between the year 2016-2017, this histogram further shows that Oahu maintains con
 
 ![temp_histogram](https://github.com/junepwk/surfs-up/blob/main/Resources/temp_histogram.png)
 
+<p align="right">(<a href="#top">back to top</a>)</p>
+
 ## Summary
 As stated above, the weather in Oahu remains pretty consistent and moderate throughout the year making the location ideal for opening a surf shop that also serves ice cream. 
 
@@ -48,5 +52,5 @@ By looking at the precipiation data for the months of June and December, Decembe
 ![june_prcp](https://github.com/junepwk/surfs-up/blob/main/Resources/june_prcp.png)
 ![dec_prcp](https://github.com/junepwk/surfs-up/blob/main/Resources/dec_prcp.png)
 
-
+<p align="right">(<a href="#top">back to top</a>)</p>
 
